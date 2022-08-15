@@ -1,2 +1,2 @@
 # Estrutura de dados e algorítmos
-### Repositório criado com o intuito de guardar os códigos desenvolvidos durante a matéria
+### Repositório criado com o intuito de documentar os códigos desenvolvidos durante a matéria
