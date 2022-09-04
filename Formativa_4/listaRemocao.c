@@ -6,6 +6,7 @@ typedef struct celula{
     struct celula *prox;
 } celula;
 
+//Uma função que remove o elemento imediatamente seguinte do ponteiro p, com protótipo
 int remove_depois(celula *p){
     celula *q;
     if(p->prox==NULL) EXIT_FAILURE;
@@ -17,6 +18,7 @@ int remove_depois(celula *p){
     }
 }
 
+//Uma função que remove a primeira ocorrência de x da lista encadeada, cujo protótipo é
 void remove_elemento(celula *le, int x){
     celula *p, *q;
     p = le;
@@ -30,6 +32,7 @@ void remove_elemento(celula *le, int x){
     }
 }
 
+//Uma função que remove todas as ocorrências de x da lista encadeada, cujo protótipo é
 void remove_todos_elementos(celula *le, int x){
     celula *p, *q, *r;
     p = le;

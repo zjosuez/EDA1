@@ -7,6 +7,8 @@ typedef struct celula
     struct celula *prox;
 } celula;
 
+//Uma função que procura pela primeira ocorrência do elemento x na lista encadeada e devolve um ponteiro para a célula que o contém.
+//O protótipo desta função deve ser:
 celula *busca(celula *le, int x)
 {
     celula *p;
@@ -16,6 +18,7 @@ celula *busca(celula *le, int x)
     return p;
 }
 
+//Uma função que faz o mesmo que o item 3, mas recursiva, com protótipo
 celula *busca_rec(celula *le, int x)
 {
     if (le == NULL || le->dado == x)

@@ -7,6 +7,7 @@ typedef struct celula
     struct celula *prox;
 } celula;
 
+//Recebe duas listas encadeadas, encabeçadas por l1 e l2, cujo conteúdo está ordenado em ordem não decrescente, e gere uma nova lista encabeçada por l3 que contém os elementos de l1 e l2 ordenados.
 void mescla_listas(celula *l1, celula *l2, celula *l3)
 {
     celula *p, *t, *r, *aux;

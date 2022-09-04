@@ -7,6 +7,7 @@ typedef struct celula
     struct celula *prox;
 } celula;
 
+//Duas funções (uma iterativa e outra recursiva) que imprimem a lista encadeada. Os protótipos devem ser
 void imprime(celula *le)
 {
     celula *p = le->prox;
