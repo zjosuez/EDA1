@@ -1,41 +1,28 @@
 #include <stdio.h>
-
-char troca(char str[])
+void substitui(char *palavra, char char1, char char2)
 {
-    int k = 0;
-    if (k == 80)
-    {
-        return 1;
-    }
-    if (str[k] != '\0')
-    {
+    static int i = 0;
 
-        if (str[k] == 'x')
-        {
-            str[k] == 'y';
-            k++;
-            return troca(str[k]);
-        }
-        if (str[k] == 'y')
-        {
-            str[k] == 'x';
-            k++;
-            return troca(str[k + 1]);
-        }
-        else
-        {
-            k++;
-        }
+    if (!palavra[i])
+    {
+        return;
     }
+
+    if (palavra[i] == char1)
+    {
+        palavra[i] = char2;
+    }
+    i++;
+    substitui(palavra, char1, char2);
 }
 
 int main()
 {
-    char palavra[80];
-    char result[80];
-    scanf("%s", &palavra);
 
-    result[80] = troca(palavra);
-    printf("%s\n", result);
+    char palavra[80];
+    scanf("%s", palavra);
+    substitui(palavra, 'x', 'y');
+    printf("%s\n", palavra);
+
     return 0;
 }
